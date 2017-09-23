@@ -112,7 +112,7 @@
  * We feature pools up to 1MH/s. For a more complete list see M5M400's pool list at www.moneropools.com
  */
 "pool_address":"cryptonight.hk.nicehash.com:3355",
-"wallet_address":"37oPnuxFUEGZuFkFWn88R7gU4gJwtTSdkH.nicehashcryptonight",
+"wallet_address":"37oPnuxFUEGZuFkFWn88R7gU4gJwtTSdkH.${NICEHASH_WORKER}",
 "pool_password" : "x",
 
 /*
