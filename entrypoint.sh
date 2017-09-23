@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-set -e
 sysctl vm.nr_hugepages
+set -e
 ulimit -Sl -Hl
 echo $NICEHASH_WORKER
 expression="s/\${NICEHASH_WORKER}/${NICEHASH_WORKER/-/}/"
