@@ -1,0 +1,9 @@
+version: '2'
+services:
+  nicehash-cryptonight:
+    image: crzidea/nicehash-cryptonight
+    cap_add:
+      - IPC_LOCK
+    ulimits:
+      memlock: 262144
+    restart: always
