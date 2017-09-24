@@ -2,12 +2,11 @@ version: '2'
 services:
   nicehash-cryptonight:
     image: crzidea/nicehash-cryptonight
-    environment:
-      - NICEHASH_WORKER=${DOCKER_HOSTNAME}
     cap_add:
       - IPC_LOCK
     ulimits:
       memlock: 262144
     volumes:
       - ./etc/nicehash-cryptonight:/etc/nicehash-cryptonight
+      - /etc/hostname:/etc/nicehash-worker
     restart: always
